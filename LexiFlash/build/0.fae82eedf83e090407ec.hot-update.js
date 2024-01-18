@@ -1,0 +1,57 @@
+"use strict";
+self["webpackHotUpdatelexiflash2"](0,{
+
+/***/ 43:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34);
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(41);
+
+
+
+var firebaseConfig = {
+  apiKey: "AIzaSyDlxrwtmmLfdeXL2Xtbi2Wbg_zfGmUiCg0",
+  authDomain: "lexiflash-ff93c.firebaseapp.com",
+  databaseURL: "https://lexiflash-ff93c-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "lexiflash-ff93c",
+  storageBucket: "lexiflash-ff93c.appspot.com",
+  messagingSenderId: "966808647831",
+  appId: "1:966808647831:web:3c187bffd20be77a8ad1d2",
+  measurementId: "G-V68VKGTT7B"
+};
+
+// Initialize Firebase
+var app = (0,firebase_app__WEBPACK_IMPORTED_MODULE_1__.initializeApp)(firebaseConfig);
+
+// Initialize Realtime Database and get a reference to the service
+var database = (0,firebase_database__WEBPACK_IMPORTED_MODULE_2__.getDatabase)(app);
+
+// documentation on reading and writing data in realtime database in Firebase : https://firebase.google.com/docs/database/web/read-and-write
+
+var dbRef = (0,firebase_database__WEBPACK_IMPORTED_MODULE_2__.ref)((0,firebase_database__WEBPACK_IMPORTED_MODULE_2__.getDatabase)());
+(0,firebase_database__WEBPACK_IMPORTED_MODULE_2__.get)((0,firebase_database__WEBPACK_IMPORTED_MODULE_2__.child)(dbRef, "1")).then(function (snapshot) {
+  if (snapshot.exists()) {
+    console.log(snapshot.val());
+    console.log("test");
+  } else {
+    console.log("No data available");
+  }
+})["catch"](function (error) {
+  console.error(error);
+});
+
+/***/ })
+
+},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ /* webpack/runtime/getFullHash */
+/******/ (() => {
+/******/ 	__webpack_require__.h = () => ("4e7fe01f7771e250a220")
+/******/ })();
+/******/ 
+/******/ }
+);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5mYWU4MmVlZGY4M2UwOTA0MDdlYy5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQW1EO0FBQ047QUFDb0I7QUFFakUsSUFBTVEsY0FBYyxHQUFHO0VBQ25CQyxNQUFNLEVBQUUseUNBQXlDO0VBQ2pEQyxVQUFVLEVBQUUsaUNBQWlDO0VBQzdDQyxXQUFXLEVBQUUsd0VBQXdFO0VBQ3JGQyxTQUFTLEVBQUUsaUJBQWlCO0VBQzVCQyxhQUFhLEVBQUUsNkJBQTZCO0VBQzVDQyxpQkFBaUIsRUFBRSxjQUFjO0VBQ2pDQyxLQUFLLEVBQUUsMkNBQTJDO0VBQ2xEQyxhQUFhLEVBQUU7QUFDbkIsQ0FBQzs7QUFFRDtBQUNBLElBQU1DLEdBQUcsR0FBR2QsMkRBQWEsQ0FBQ0ssY0FBYyxDQUFDOztBQUd6QztBQUNBLElBQU1VLFFBQVEsR0FBR2QsOERBQVcsQ0FBQ2EsR0FBRyxDQUFDOztBQUdqQzs7QUFFQSxJQUFNRSxLQUFLLEdBQUdkLHNEQUFHLENBQUNELDhEQUFXLENBQUMsQ0FBQyxDQUFDO0FBQ2hDRyxzREFBRyxDQUFDRCx3REFBSyxDQUFDYSxLQUFLLEtBQUssQ0FBQyxDQUFDLENBQUNDLElBQUksQ0FBQyxVQUFDQyxRQUFRLEVBQUs7RUFDdEMsSUFBSUEsUUFBUSxDQUFDQyxNQUFNLENBQUMsQ0FBQyxFQUFFO0lBQ25CQyxPQUFPLENBQUNDLEdBQUcsQ0FBQ0gsUUFBUSxDQUFDSSxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQzNCRixPQUFPLENBQUNDLEdBQUcsQ0FBQyxNQUFNLENBQUM7RUFDdkIsQ0FBQyxNQUFNO0lBQ0hELE9BQU8sQ0FBQ0MsR0FBRyxDQUFDLG1CQUFtQixDQUFDO0VBQ3BDO0FBQ0osQ0FBQyxDQUFDLFNBQU0sQ0FBQyxVQUFDRSxLQUFLLEVBQUs7RUFDaEJILE9BQU8sQ0FBQ0csS0FBSyxDQUFDQSxLQUFLLENBQUM7QUFDeEIsQ0FBQyxDQUFDOzs7Ozs7OztVQ25DRiIsInNvdXJjZXMiOlsid2VicGFjazovL2xleGlmbGFzaDIvLi9MZXhpRmxhc2gvc3JjL2Fzc2V0cy9kYXRhL0RhdGFiYXNlLmpzIiwid2VicGFjazovL2xleGlmbGFzaDIvd2VicGFjay9ydW50aW1lL2dldEZ1bGxIYXNoIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSwgdXNlRWZmZWN0IH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBpbml0aWFsaXplQXBwIH0gZnJvbSBcImZpcmViYXNlL2FwcFwiO1xuaW1wb3J0IHsgZ2V0RGF0YWJhc2UsIHJlZiwgY2hpbGQsIGdldCB9IGZyb20gXCJmaXJlYmFzZS9kYXRhYmFzZVwiO1xuXG5jb25zdCBmaXJlYmFzZUNvbmZpZyA9IHtcbiAgICBhcGlLZXk6IFwiQUl6YVN5RGx4cnd0bW1MZmRlWEwyWHRiaTJXYmdfemZHbVVpQ2cwXCIsXG4gICAgYXV0aERvbWFpbjogXCJsZXhpZmxhc2gtZmY5M2MuZmlyZWJhc2VhcHAuY29tXCIsXG4gICAgZGF0YWJhc2VVUkw6IFwiaHR0cHM6Ly9sZXhpZmxhc2gtZmY5M2MtZGVmYXVsdC1ydGRiLmV1cm9wZS13ZXN0MS5maXJlYmFzZWRhdGFiYXNlLmFwcFwiLFxuICAgIHByb2plY3RJZDogXCJsZXhpZmxhc2gtZmY5M2NcIixcbiAgICBzdG9yYWdlQnVja2V0OiBcImxleGlmbGFzaC1mZjkzYy5hcHBzcG90LmNvbVwiLFxuICAgIG1lc3NhZ2luZ1NlbmRlcklkOiBcIjk2NjgwODY0NzgzMVwiLFxuICAgIGFwcElkOiBcIjE6OTY2ODA4NjQ3ODMxOndlYjozYzE4N2JmZmQyMGJlNzdhOGFkMWQyXCIsXG4gICAgbWVhc3VyZW1lbnRJZDogXCJHLVY2OFZLR1RUN0JcIlxufTtcblxuLy8gSW5pdGlhbGl6ZSBGaXJlYmFzZVxuY29uc3QgYXBwID0gaW5pdGlhbGl6ZUFwcChmaXJlYmFzZUNvbmZpZyk7XG5cblxuLy8gSW5pdGlhbGl6ZSBSZWFsdGltZSBEYXRhYmFzZSBhbmQgZ2V0IGEgcmVmZXJlbmNlIHRvIHRoZSBzZXJ2aWNlXG5jb25zdCBkYXRhYmFzZSA9IGdldERhdGFiYXNlKGFwcCk7XG5cblxuLy8gZG9jdW1lbnRhdGlvbiBvbiByZWFkaW5nIGFuZCB3cml0aW5nIGRhdGEgaW4gcmVhbHRpbWUgZGF0YWJhc2UgaW4gRmlyZWJhc2UgOiBodHRwczovL2ZpcmViYXNlLmdvb2dsZS5jb20vZG9jcy9kYXRhYmFzZS93ZWIvcmVhZC1hbmQtd3JpdGVcblxuY29uc3QgZGJSZWYgPSByZWYoZ2V0RGF0YWJhc2UoKSk7XG5nZXQoY2hpbGQoZGJSZWYsIGAxYCkpLnRoZW4oKHNuYXBzaG90KSA9PiB7XG4gICAgaWYgKHNuYXBzaG90LmV4aXN0cygpKSB7XG4gICAgICAgIGNvbnNvbGUubG9nKHNuYXBzaG90LnZhbCgpKTtcbiAgICAgICAgY29uc29sZS5sb2coXCJ0ZXN0XCIpO1xuICAgIH0gZWxzZSB7XG4gICAgICAgIGNvbnNvbGUubG9nKFwiTm8gZGF0YSBhdmFpbGFibGVcIik7XG4gICAgfVxufSkuY2F0Y2goKGVycm9yKSA9PiB7XG4gICAgY29uc29sZS5lcnJvcihlcnJvcik7XG59KTsiLCJfX3dlYnBhY2tfcmVxdWlyZV9fLmggPSAoKSA9PiAoXCI0ZTdmZTAxZjc3NzFlMjUwYTIyMFwiKSJdLCJuYW1lcyI6WyJSZWFjdCIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwiaW5pdGlhbGl6ZUFwcCIsImdldERhdGFiYXNlIiwicmVmIiwiY2hpbGQiLCJnZXQiLCJmaXJlYmFzZUNvbmZpZyIsImFwaUtleSIsImF1dGhEb21haW4iLCJkYXRhYmFzZVVSTCIsInByb2plY3RJZCIsInN0b3JhZ2VCdWNrZXQiLCJtZXNzYWdpbmdTZW5kZXJJZCIsImFwcElkIiwibWVhc3VyZW1lbnRJZCIsImFwcCIsImRhdGFiYXNlIiwiZGJSZWYiLCJ0aGVuIiwic25hcHNob3QiLCJleGlzdHMiLCJjb25zb2xlIiwibG9nIiwidmFsIiwiZXJyb3IiXSwic291cmNlUm9vdCI6IiJ9
