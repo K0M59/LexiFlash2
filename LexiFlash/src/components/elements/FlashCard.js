@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import AnswerBox from "./AnswerBox";
 
 export default function FlashCard() {
 
@@ -146,11 +147,13 @@ export default function FlashCard() {
         setBack(currentWordPair.def);
     }, []);
 
+
     return <>
         <h1 className="set__title">{category}</h1>
         <div>
             <p className="flashcard__front">{front}</p>
             <p className="flashcard__back">{back}</p>
         </div>
+        <AnswerBox correctAnswer={back}/>
     </>
 }
